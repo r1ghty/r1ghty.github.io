@@ -1,0 +1,115 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+p {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main {
+  display:inline-block;
+  margin: auto;
+  height: 164px;
+}
+
+.expand {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -80px;
+}
+
+.social-btn {
+  display: inline-block;
+  height: 164px;
+}
+
+.social-btn span {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 16px;
+  transition: background-image 0.25s linear;
+}
+
+.social-vk {
+  background-image: url('img/vk_logo-white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.social-vk:hover {
+  background-image: url('img/vk_logo.png');
+}
+
+.social-gh {
+  background-image: url('img/gh_logo-white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.social-gh:hover {
+  background-image: url('img/gh_logo.png');
+}
+
+.social-xda {
+  background-image: url('img/xda_logo-white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.social-xda:hover {
+  background-image: url('img/xda_logo.png');
+}
+
+@media (orientation: landscape) {
+  .line {
+    display: inline-block;
+    border-left: 30px solid white;
+    height: 164px;
+    margin-right: 16px;
+    margin-left: 32px;
+    margin-bottom: -24px;
+  }
+}
+
+@media (orientation: portrait) {
+  .line {
+    border-bottom: 10px solid white;
+    width: 500px;
+    margin: auto;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .expand {
+    font-size: 60%;
+    margin-left: -48px;
+  }
+}
