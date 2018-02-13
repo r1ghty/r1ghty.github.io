@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Description" content="R1GHTY's Home Page">
     <title>R1GHTY</title>
     
-    <link rel="stylesheet" type="text/css" href="jquery.fullpage.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000"/>
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css" />
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="jquery.fullpage.min.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#000000', '#000000'],
-       			css3: true
-       		});
-		});
-    </script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div id="fullpage">
@@ -46,5 +38,18 @@
         </div>
       </div>
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="jquery.fullpage.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        sectionsColor: ['#000000', '#000000'],
+          css3: true
+        });
+    });
+    </script>
   </body>
 </html>
