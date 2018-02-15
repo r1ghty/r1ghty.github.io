@@ -39,7 +39,12 @@ p {
   position: absolute;
   left: 50%;
   bottom: 0px;
-  margin-left: -80px;
+  margin-left: -48px;
+}
+
+.expand p {
+  margin-bottom: -16px;
+  font-size: 1em;
 }
 
 .social-btn {
@@ -104,12 +109,5 @@ p {
     border-bottom: 10px solid white;
     width: 500px;
     margin: auto;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .expand {
-    font-size: 60%;
-    margin-left: -48px;
   }
 }
