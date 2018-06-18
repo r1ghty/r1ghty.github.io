@@ -27,18 +27,6 @@
   </head>
   <body>
     <div id="fullpage">
-      <div id="arrow">
-        <div class="expand">
-          <div id="projects" class="active">
-            <p>PROJECTS</p>
-            <i class="material-icons">expand_more</i>
-          </div>
-          <div id="home">
-            <i class="material-icons">expand_less</i>
-            <p>HOME</p>
-          </div>
-        </div>
-      </div>
       <div class="section" id="section0">
         <div class="main">
           <h1>R1GHTY</h1>
@@ -51,10 +39,6 @@
           <a href="https://github.com/r1ghty"><span class="social-gh"></span></a>
         </div>
       </div>
-      <div class="section" id="section1">
-        <div class="projects">
-        </div>
-      </div>
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -64,22 +48,8 @@
     <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        sectionsColor: ['#000000', '#000000'],
-        css3: true,
-        
-        'onLeave': function(index, nextIndex, direction){
-          if(index == 1 && direction == 'down'){
-            $('#projects').removeClass('active');
-            $('#home').addClass('active');
-          }
-          else if(index == 2 && direction == 'up'){
-            $('#projects').addClass('active');
-            $('#home').removeClass('active');
-          }
-          
-          $('#arrow').toggleClass('moveDown', nextIndex == 2);
-          $('#arrow').toggleClass('moveUp', index == 2 && direction == 'up');
-        }
+        sectionsColor: ['#000000'],
+        css3: true
       });
     });
     </script>
